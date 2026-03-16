@@ -27,9 +27,9 @@ No deprecated functions were found in the provided code. The code uses the `requ
 #### Variable Naming Consistency
 
 **Issue:** Inconsistent Variable Naming
-- **Context:** `access_token`, `username`, `user_info`
+- **Context:** `access_token`, `s__0___umya__`
 - **Description:** The variable names do not follow a consistent naming convention.
-- **Suggested Fix:** Rename variables to adhere to a consistent style, like snake_case: `access_token`, `username`, `user_info`.
+- **Suggested Fix:** Rename variables to adhere to a consistent style, like snake_case: `access_token`, `s__0___umya__`
 
 #### Comments Review
 
@@ -41,7 +41,7 @@ No deprecated functions were found in the provided code. The code uses the `requ
 #### Potential Refactoring Spots
 
 **Issue:** Hard-coded API URL
-- **Context:** `url = f"https://api.instagram.com/v1/users/{username}/?access_token={self.access_token}"`
+- **Context:** `url = f"https://api.instagram.com/v1/users/{`s__0___umya__`}/?access_token={self.access_token}"`
 - **Description:** The API URL is hard-coded within the method, making it less flexible and reusable.
 - **Suggested Fix:** Consider moving the API URL to a separate constant or configuration file to improve maintainability and allow for easier modification.
 
@@ -62,7 +62,7 @@ No deprecated functions were found in the provided code. The code uses the `requ
 #### Compatibility Issues
 
 **Issue:** API Version Dependency
-- **Context:** `url = f"https://api.instagram.com/v1/users/{username}/?access_token={self.access_token}"`
+- **Context:** `url = f"https://api.instagram.com/v1/users/{`s__0___umya__`}/?access_token={self.access_token}"`
 - **Description:** The code relies on the Instagram API version 1 (`v1`), which may become deprecated or unsupported in the future.
 - **Suggested Fix:** Keep track of Instagram API updates and adjust the code accordingly to ensure compatibility with newer versions.
 
